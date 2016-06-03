@@ -8,7 +8,7 @@ add in your `/etc/hosts`  the following line
 127.0.0.1   http://scale-test.com/
 ```
 
-launch app
+launch app 
 ```
 docker-compose up
 ```
@@ -24,3 +24,8 @@ refresh...
 refresh...
 
 Hostname and ips should change.
+
+## Requirement
+
+* docker-compose file version 2 
+* docker-compose engine version 1.6.2+
