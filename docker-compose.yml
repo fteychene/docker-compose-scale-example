@@ -1,14 +1,22 @@
 version: "2"
 
 services:
-  mynodeapp:
+  mybackapp:
     build:
-      context: ./app
+      context: ./back-app
       dockerfile: Dockerfile
     networks:
       mynetwork:
         aliases:
-          - mynodeapp
+          - mybackapp
+  mymiddleapp:
+    build:
+      context: ./middle-app
+      dockerfile: Dockerfile
+    networks:
+      mynetwork:
+        aliases:
+          - mymiddleapp
   nginx:
     build:
       context: ./nginx
